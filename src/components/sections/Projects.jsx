@@ -116,7 +116,7 @@ export const Projects = () => {
 
                         <a href="https://github.com/Kauet-Martins/Form-Page" className="text-emerald-500 hover: text-emerald-300 transition-colors my-4 ">View Project →</a>
 
-                        <a href="https://github.com/Kauet-Martins/Form-Page" className="my-4"><img src={githublogo} alt="Github Logo"/></a>
+                        <a href="https://github.com/Kauet-Martins/Form-Page" className="my-4"><img src={githublogo} alt=""/></a>
 
                     </div>
 
