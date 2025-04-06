@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import githublogo from "../assets/icons8-github-64.png"
 
 export const Projects = () => {
 
@@ -41,7 +42,7 @@ export const Projects = () => {
 
                         <a href="https://github.com/Kauet-Martins/processamentoFatura" className="text-emerald-500 hover: text-emerald-300 transition-colors my-4">View Project →</a>
 
-                        <a href="https://github.com/Kauet-Martins/processamentoFatura" className="my-4"><img src="src\assets\icons8-github-64.png" alt=""/></a>
+                        <a href="https://github.com/Kauet-Martins/processamentoFatura" className="my-4"><img src={githublogo} alt=""/></a>
 
                     </div>
 
@@ -80,7 +81,7 @@ export const Projects = () => {
 
                         <a href="https://github.com/Kauet-Martins/downloadFaturas" className="text-emerald-500 hover: text-emerald-300 transition-colors my-4">View Project →</a>
 
-                        <a href="https://github.com/Kauet-Martins/downloadFaturas" className="my-4"><img src="src\assets\icons8-github-64.png" alt=""/></a>
+                        <a href="https://github.com/Kauet-Martins/downloadFaturas" className="my-4"><img src={githublogo} alt=""/></a>
 
                     </div>
 
@@ -115,7 +116,7 @@ export const Projects = () => {
 
                         <a href="https://github.com/Kauet-Martins/Form-Page" className="text-emerald-500 hover: text-emerald-300 transition-colors my-4 ">View Project →</a>
 
-                        <a href="https://github.com/Kauet-Martins/Form-Page" className="my-4"><img src="src\assets\icons8-github-64.png" alt="Github Logo"/></a>
+                        <a href="https://github.com/Kauet-Martins/Form-Page" className="my-4"><img src={githublogo} alt="Github Logo"/></a>
 
                     </div>
 
