@@ -1,12 +1,47 @@
-# React + Vite
+# Portfólio Pessoal - Kauet Martins
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+Este repositório contém o código-fonte do meu portfólio profissional, uma plataforma para demonstrar minhas habilidades, projetos e experiência. O site foi desenvolvido com foco em design responsivo, performance e usabilidade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+* HTML5
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* CSS3 (com Flexbox e Grid Layout)
+
+* JavaScript (ES6+)
+
+* React
+
+* TailWindCss
+
+### Recursos Implementados
+
+* Seção "Sobre Mim" com perfil profissional
+
+* Galeria de projetos com detalhes técnicos
+
+* Histórico de experiência profissional
+
+* Formulário de contato funcional
+
+* Design responsivo para todas as telas
+
+
+
+### Como Acessar 
+
+#### Acesse o Link Abaixo:
+
+https://kauet-martins.github.io/Kauet-Portifolio/
+
+### Licença
+Este projeto está licenciado sob a MIT License.
+
+### Contato
+Para mais informações ou oportunidades profissionais, entre em contato:
+
+Email: kauetdamotta@gmail.com 
+
+LinkedIn: www.linkedin.com/in/kauet-martins
