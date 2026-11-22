@@ -1,17 +1,90 @@
 <!doctype html>
-<html lang="en">
+<!-- Direção de design (skill Taste): tipo service, paleta cool-grey-cobalt, tipografia Newsreader + Hanken Grotesk,
+     hero split, nav-mega, footer-columns, close-type, ritmo dark-band (Projetos), botões solid, marca ring,
+     momento word-highlight. -->
+<html lang="pt-BR" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/Kauet-Portifolio/assets/coding-DrEq_-oV.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Kauet - Portifolio</title>
-    <script type="module" crossorigin src="/Kauet-Portifolio/assets/index-BeXzQf0L.js"></script>
-    <link rel="stylesheet" crossorigin href="/Kauet-Portifolio/assets/index-1P-J1QPt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Kauet Martins: desenvolvedor web com React, TypeScript e Python</title>
+    <meta
+      name="description"
+      content="Portfólio de Kauet Martins, formado em Análise e Desenvolvimento de Sistemas. Aplicações web, automações em Python e finanças públicas na Prefeitura de Araranguá."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kauet Martins: desenvolvedor web com React, TypeScript e Python" />
+    <meta
+      property="og:description"
+      content="Aplicações web, automações em Python e finanças públicas na Prefeitura de Araranguá."
+    />
+    <meta property="og:url" content="https://kauet-martins.github.io/Kauet-Portifolio/" />
+    <meta property="og:image" content="https://kauet-martins.github.io/Kauet-Portifolio/share.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#eef0f3" />
+    <meta name="site-kind" content="other" />
+    <meta name="page-type" content="service" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Hanken+Grotesk:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/system.css" />
+    <link rel="stylesheet" href="assets/ui/cards.css" />
+    <link rel="stylesheet" href="assets/motion/motion.css" />
+    <link rel="stylesheet" href="assets/backgrounds/backgrounds.css" />
+    <link rel="stylesheet" href="assets/layout/layout.css" />
+    <link rel="stylesheet" href="assets/icons/icon.css" />
+    <link rel="stylesheet" href="assets/ui/base.css" />
+    <link rel="stylesheet" href="assets/ui/chat/fragment.css" />
+    <style>
+      :root {
+        --p-bg: #eef0f3; --p-surface: #e2e5ea; --p-ink: #0b0c0e; --p-muted: #5d6470;
+        --p-accent: #1f2de6; --p-accent-ink: #ffffff; --p-action: #1f2de6; --p-action-ink: #ffffff;
+        --p-inv-bg: #0b0c0e; --p-inv-surface: #17181a; --p-inv-ink: #eef0f3; --p-inv-muted: #8e8f92;
+        --p-inv-accent: #eef0f3; --p-inv-accent-ink: #0b0c0e; --p-inv-action: #eef0f3; --p-inv-action-ink: #0b0c0e;
+        --font-display: "Newsreader", Georgia, serif;
+        --font-text: "Hanken Grotesk", system-ui, sans-serif;
+        --display-weight: 400;
+        --display-tracking: -0.018em;
+        --display-tracking-xl: -0.025em;
+        --ly-scale: 1.06;
+      }
+      /* tema escuro: mesmos tokens do kit, em tons escuros; o cobalto clareia para manter contraste */
+      html[data-theme="dark"] {
+        color-scheme: dark;
+        --p-bg: #0e1014; --p-surface: #181b21; --p-ink: #eef0f3; --p-muted: #9aa0ab;
+        --p-accent: #8b94ff; --p-accent-ink: #0b0c0e; --p-action: #8b94ff; --p-action-ink: #0b0c0e;
+        --p-inv-bg: #171a20; --p-inv-surface: #21252d; --p-inv-ink: #eef0f3; --p-inv-muted: #9aa0ab;
+        --p-inv-accent: #eef0f3; --p-inv-accent-ink: #0b0c0e; --p-inv-action: #eef0f3; --p-inv-action-ink: #0b0c0e;
+      }
+    </style>
+    <script>
+      try {
+        var saved = localStorage.getItem('theme')
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.dataset.theme = 'dark'
+      } catch (e) {}
+    </script>
+    <script>
+      document.documentElement.classList.add('m-enter')
+      setTimeout(() => document.documentElement.classList.add('m-enter-done'), 700)
+    </script>
+    <script src="assets/backgrounds/backgrounds.js"></script>
+    <script>
+      document.documentElement.classList.add('mo-js')
+      setTimeout(() => document.documentElement.classList.add('mo-safe'), 2500)
+    </script>
+    <script type="module" crossorigin src="/Kauet-Portifolio/assets/index-Dwu87qL1.js"></script>
+    <link rel="stylesheet" crossorigin href="/Kauet-Portifolio/assets/index-C50QYdex.css">
   </head>
   <body>
-    <div id="root"></div>
+    <header class="nav" id="nav-root"></header>
+    <main id="top"></main>
+    <footer class="footer closing g2m" id="rodape" aria-labelledby="close-h"></footer>
+    <nav class="actionbar" id="bar-root" aria-label="Ações rápidas"></nav>
+    <noscript>Este portfólio precisa de JavaScript. Contato: github.com/Kauet-Martins</noscript>
   </body>
 </html>
