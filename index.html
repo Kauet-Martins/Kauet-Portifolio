@@ -9,13 +9,13 @@
     <title>Kauet Martins: desenvolvedor web com React, TypeScript e Python</title>
     <meta
       name="description"
-      content="Portfólio de Kauet Martins, formado em Análise e Desenvolvimento de Sistemas. Aplicações web, automações em Python e sistemas públicos na Prefeitura de Araranguá."
+      content="Portfólio de Kauet Martins, formado em Análise e Desenvolvimento de Sistemas. Aplicações web, automações em Python e finanças públicas na Prefeitura de Araranguá."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Kauet Martins: desenvolvedor web com React, TypeScript e Python" />
     <meta
       property="og:description"
-      content="Aplicações web, automações em Python e sistemas públicos na Prefeitura de Araranguá."
+      content="Aplicações web, automações em Python e finanças públicas na Prefeitura de Araranguá."
     />
     <meta property="og:url" content="https://kauet-martins.github.io/Kauet-Portifolio/" />
     <meta property="og:image" content="https://kauet-martins.github.io/Kauet-Portifolio/share.jpg" />
@@ -52,7 +52,22 @@
         --display-tracking-xl: -0.025em;
         --ly-scale: 1.06;
       }
+      /* tema escuro: mesmos tokens do kit, em tons escuros; o cobalto clareia para manter contraste */
+      html[data-theme="dark"] {
+        color-scheme: dark;
+        --p-bg: #0e1014; --p-surface: #181b21; --p-ink: #eef0f3; --p-muted: #9aa0ab;
+        --p-accent: #8b94ff; --p-accent-ink: #0b0c0e; --p-action: #8b94ff; --p-action-ink: #0b0c0e;
+        --p-inv-bg: #171a20; --p-inv-surface: #21252d; --p-inv-ink: #eef0f3; --p-inv-muted: #9aa0ab;
+        --p-inv-accent: #eef0f3; --p-inv-accent-ink: #0b0c0e; --p-inv-action: #eef0f3; --p-inv-action-ink: #0b0c0e;
+      }
     </style>
+    <script>
+      try {
+        var saved = localStorage.getItem('theme')
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.dataset.theme = 'dark'
+      } catch (e) {}
+    </script>
     <script>
       document.documentElement.classList.add('m-enter')
       setTimeout(() => document.documentElement.classList.add('m-enter-done'), 700)

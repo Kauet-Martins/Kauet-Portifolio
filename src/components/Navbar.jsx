@@ -31,6 +31,26 @@ function useScrollSpy() {
   return current
 }
 
+// Tema claro/escuro: o atributo data-theme em <html> troca os tokens (index.html); a escolha fica no localStorage.
+function useTheme() {
+  const [dark, setDark] = useState(() => document.documentElement.dataset.theme === 'dark')
+  const toggle = () => {
+    const next = !dark
+    const html = document.documentElement
+    if (next) html.dataset.theme = 'dark'
+    else delete html.dataset.theme
+    html.dataset.tone = next ? 'dark' : 'light'
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next ? '#0e1014' : '#eef0f3')
+    try {
+      localStorage.setItem('theme', next ? 'dark' : 'light')
+    } catch {
+      /* sem armazenamento: o tema vale só nesta visita */
+    }
+    setDark(next)
+  }
+  return [dark, toggle]
+}
+
 const PROJECT_LINKS = [
   ['finanai', '#finanai', 'React, TypeScript, Firebase'],
   ['trilhas', '#trilhas', 'HTML, CSS, JavaScript'],
@@ -42,6 +62,7 @@ export default function Navbar() {
   const { lang, t, setLang } = useLang()
   const projects = t.projects.items
   const current = useScrollSpy()
+  const [dark, toggleTheme] = useTheme()
   const mark = (key) => (current === key ? 'page' : undefined)
 
   return (
@@ -95,6 +116,23 @@ export default function Navbar() {
           </div>
         </nav>
         <div className="nav__actions">
+          <button
+            type="button"
+            className="nav__link lang-switch theme-switch"
+            aria-label={dark ? t.nav.themeToLight : t.nav.themeToDark}
+            onClick={toggleTheme}
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              {dark ? (
+                <>
+                  <circle cx="9" cy="9" r="3.2" />
+                  <path d="M9 1.8v1.6M9 14.6v1.6M1.8 9h1.6M14.6 9h1.6M3.9 3.9l1.1 1.1M13 13l1.1 1.1M14.1 3.9L13 5M5 13l-1.1 1.1" />
+                </>
+              ) : (
+                <path d="M15.2 10.6A6.4 6.4 0 0 1 7.4 2.8a6.4 6.4 0 1 0 7.8 7.8z" />
+              )}
+            </svg>
+          </button>
           <button
             type="button"
             className="nav__link lang-switch"

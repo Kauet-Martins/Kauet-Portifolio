@@ -33,7 +33,7 @@ const pt = {
   lang: 'pt-BR',
   title: 'Kauet Martins: desenvolvedor web com React, TypeScript e Python',
   description:
-    'Portfólio de Kauet Martins, formado em Análise e Desenvolvimento de Sistemas. Aplicações web, automações em Python e sistemas públicos na Prefeitura de Araranguá.',
+    'Portfólio de Kauet Martins, formado em Análise e Desenvolvimento de Sistemas. Aplicações web, automações em Python e finanças públicas na Prefeitura de Araranguá.',
   skip: 'Ir para o conteúdo',
   nav: {
     label: 'Principal',
@@ -45,11 +45,13 @@ const pt = {
     quick: 'Ações rápidas',
     switchTo: 'Mudar para English',
     switchLabel: 'EN',
+    themeToDark: 'Usar tema escuro',
+    themeToLight: 'Usar tema claro',
   },
   hero: {
     notice: 'Na Prefeitura de Araranguá desde 2021',
     h1: 'Desenvolvedor web com React e Python',
-    lead: 'Formado em Análise e Desenvolvimento de Sistemas pela Unesc. Construo aplicações web e automações, e cuido de sistemas públicos no dia a dia da prefeitura.',
+    lead: 'Formado em Análise e Desenvolvimento de Sistemas pela Unesc. Construo aplicações web e automações, e trabalho com finanças e tesouraria na prefeitura.',
     primary: 'Enviar mensagem',
     secondary: 'Ver projetos',
     facts: [
@@ -69,7 +71,7 @@ const pt = {
   },
   statement: {
     label: 'Trabalho',
-    text: 'Desde 2021, na Prefeitura de Araranguá, dou suporte a sistemas públicos e ajudo a melhorá-los. Também treino equipes, faço entrada de dados e escrevo pequenas <strong>automações</strong> que cortam trabalho repetido.',
+    text: 'Desde 2021, na Prefeitura de Araranguá, trabalho no setor de finanças e tesouraria: faço pagamentos no módulo financeiro do sistema da IPM Sistemas. Também treino equipes, faço entrada de dados e escrevo pequenas <strong>automações</strong> que cortam trabalho repetido.',
   },
   about: {
     h2: 'Sobre mim.',
@@ -77,7 +79,7 @@ const pt = {
     rows: [
       ['Análise e Desenvolvimento de Sistemas', 'Unesc', '2022–2024'],
       ['Full Stack Developer', 'OneBitCode', 'Curso'],
-      ['Suporte e melhoria de sistemas', 'Prefeitura de Araranguá', 'Desde 2021'],
+      ['Finanças e tesouraria', 'Prefeitura de Araranguá', 'Desde 2021'],
     ],
     techLabel: 'Tecnologias dos meus projetos',
     site: 'Este site',
@@ -154,7 +156,7 @@ const en = {
   lang: 'en',
   title: 'Kauet Martins: web developer with React, TypeScript and Python',
   description:
-    'Portfolio of Kauet Martins, a systems analysis and development graduate. Web apps, Python automations and public systems at the Araranguá city hall.',
+    'Portfolio of Kauet Martins, a systems analysis and development graduate. Web apps, Python automations and public finance at the Araranguá city hall.',
   skip: 'Skip to content',
   nav: {
     label: 'Main',
@@ -166,11 +168,13 @@ const en = {
     quick: 'Quick actions',
     switchTo: 'Mudar para português',
     switchLabel: 'PT',
+    themeToDark: 'Use dark theme',
+    themeToLight: 'Use light theme',
   },
   hero: {
     notice: 'At the Araranguá city hall since 2021',
     h1: 'Web developer with React and Python',
-    lead: 'Graduate in Systems Analysis and Development from Unesc. I build web apps and automations, and look after public systems day to day at the city hall.',
+    lead: 'Graduate in Systems Analysis and Development from Unesc. I build web apps and automations, and work in finance and treasury at the city hall.',
     primary: 'Send a message',
     secondary: 'See projects',
     facts: [
@@ -182,7 +186,7 @@ const en = {
   },
   statement: {
     label: 'Work',
-    text: 'Since 2021, at the Araranguá city hall, I support public systems and help improve them. I also train teams, enter data and write small <strong>automations</strong> that cut repeated work.',
+    text: 'Since 2021, at the Araranguá city hall, I work in finance and treasury: I make payments in the financial module of the IPM Sistemas system. I also train teams, enter data and write small <strong>automations</strong> that cut repeated work.',
   },
   about: {
     h2: 'About me.',
@@ -190,7 +194,7 @@ const en = {
     rows: [
       ['Systems Analysis and Development', 'Unesc', '2022–2024'],
       ['Full Stack Developer', 'OneBitCode', 'Course'],
-      ['Support and improvement of systems', 'Araranguá city hall', 'Since 2021'],
+      ['Finance and treasury', 'Araranguá city hall', 'Since 2021'],
     ],
     techLabel: 'Technologies in my projects',
     site: 'This site',

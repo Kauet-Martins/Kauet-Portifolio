@@ -13,6 +13,7 @@
 
 /* botão de idioma na barra */
 .lang-switch { background: none; border: 0; padding: 0 var(--s-2); font: inherit; font-weight: 500; cursor: pointer; }
+.theme-switch { display: inline-flex; align-items: center; }
 
 /* sobre: painel com as tecnologias dos projetos */
 .tech-panel { background: var(--surface); border-radius: var(--r-lg); padding: var(--s-7); }
